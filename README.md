@@ -1,33 +1,54 @@
-# Homebrew Tap for Android Development Tools
+# Homebrew Tap for Development Tools
 
-This is a Homebrew tap for installing Android Development Tools (ADT).
+This is a Homebrew tap for installing Development Tools for Android (DTA).
 
 ## Installation
 
 ```bash
-brew tap yamsergey/adt
-brew install adt-cli
+brew tap yamsergey/packages
+brew install dta-cli
 ```
 
 ## Available Formulae
 
-- **adt-cli** - Unified CLI for Android project analysis and workspace generation
+| Formula | Description |
+|---------|-------------|
+| **dta-cli** | CLI for Android project analysis, workspace generation, and device inspection |
+| **adt-cli** | Legacy name for dta-cli (for backward compatibility) |
 
 ## Usage
 
-After installation, you can use `adt-cli`:
+After installation, you can use `dta-cli`:
 
 ```bash
 # Generate workspace.json for Kotlin LSP
-adt-cli workspace /path/to/android/project --output workspace.json
+dta-cli workspace /path/to/android/project --output workspace.json
 
 # Analyze project structure
-adt-cli resolve /path/to/android/project --workspace --output project-analysis.json
+dta-cli resolve /path/to/android/project --workspace
 
-# List build variants
-adt-cli resolve /path/to/android/project --variants --output variants.json
+# Inspect device UI hierarchy
+dta-cli inspect layout --format json
+
+# Capture device screenshot
+dta-cli inspect screenshot -o screen.png
+
+# Start MCP server for AI assistants
+dta-cli mcp --project /path/to/android/project
+
+# Start web inspector
+dta-cli inspector
 ```
 
 ## Requirements
 
 - Java 21 or higher
+- Gradle 8.0+ (for analyzed projects)
+- ADB (for device inspection commands)
+
+## Updating
+
+```bash
+brew update
+brew upgrade dta-cli
+```
