@@ -1,10 +1,10 @@
 class DtaCli < Formula
   desc "Development Tools for Android - CLI for project analysis, workspace generation, and device inspection"
   homepage "https://github.com/yamsergey/dta"
-  url "https://github.com/yamsergey/homebrew-packages/releases/download/dta-cli-0.9.18/dta-cli-0.9.18.tar.gz"
-  sha256 "62ca3b645d2829afc66e9f45f7374bfbbc4be12d2d56a2f190687b617c6a4197"
+  url "https://github.com/yamsergey/homebrew-packages/releases/download/dta-cli-0.9.19/dta-cli-0.9.19.tar.gz"
+  sha256 "2c71454eca6096690da6cd8a6729a5fb54f8ce566115e857e0e431f74004007d"
   license "LGPL-3.0"
-  version "0.9.18"
+  version "0.9.19"
 
   depends_on "openjdk@21"
 
