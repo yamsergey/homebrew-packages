@@ -1,4 +1,4 @@
-class DtaCliAtDev < Formula
+class DtaCliATDev < Formula
   desc "Development Tools for Android - CLI (dev channel)"
   homepage "https://github.com/yamsergey/dta"
   url "https://github.com/yamsergey/homebrew-packages/releases/download/dta-cli-0.9.23-dev.1/dta-cli-0.9.23-dev.1.tar.gz"
