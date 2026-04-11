@@ -1,10 +1,10 @@
 class AdtCli < Formula
   desc "Development Tools for Android - CLI (legacy name, use dta-cli instead)"
   homepage "https://github.com/yamsergey/dta"
-  url "https://github.com/yamsergey/homebrew-packages/releases/download/dta-cli-0.9.34/dta-cli-0.9.34.tar.gz"
-  sha256 "bf14c2aea2c36e1930fef2ebc43ea6dff48880c0efa61fb2420e4bd54d8d1be9"
+  url "https://github.com/yamsergey/homebrew-packages/releases/download/dta-cli-0.9.35/dta-cli-0.9.35.tar.gz"
+  sha256 "c4fa3129ca6765a7c3723a02216a6872f7ee1db6e018d28d5aaff60afc34e9de"
   license "Apache-2.0"
-  version "0.9.34"
+  version "0.9.35"
 
   depends_on "openjdk@21"
 
