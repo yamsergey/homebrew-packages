@@ -1,10 +1,10 @@
 class DtaCliDev < Formula
   desc "Development Tools for Android - CLI (SNAPSHOT/dev channel)"
   homepage "https://github.com/yamsergey/dta"
-  url "https://github.com/yamsergey/homebrew-packages/releases/download/dta-cli-dev-0.9.37-SNAPSHOT.52/dta-cli-0.9.37-SNAPSHOT.52.tar.gz"
-  sha256 "8ea16c10e00e6c3f7c66e747519aeb2cf6c3fcceca6089eedf2db276e03ec8b1"
+  url "https://github.com/yamsergey/homebrew-packages/releases/download/dta-cli-dev-0.9.37-SNAPSHOT.53/dta-cli-0.9.37-SNAPSHOT.53.tar.gz"
+  sha256 "3136f0f89cf6ad0c40b047b3ead5df0eb1397f3ab754a5ddf77667392b331d63"
   license "Apache-2.0"
-  version "0.9.37-SNAPSHOT.52"
+  version "0.9.37-SNAPSHOT.53"
 
   depends_on "openjdk@21"
 
