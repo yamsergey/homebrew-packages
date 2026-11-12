@@ -1,10 +1,10 @@
 class DtaCliDev < Formula
   desc "DTA: inspect a running Android app's screen and network from the terminal or an agent (development channel)"
   homepage "https://github.com/yamsergey/dta"
-  url "https://github.com/yamsergey/homebrew-packages/releases/download/dta-cli-dev-0.10.0-SNAPSHOT.124/dta-cli-0.10.0-SNAPSHOT.124.tar.gz"
-  sha256 "8317cecff19467286c974fcd66126e4205f40ed6bfdcf8248cbfbf739c427419"
+  url "https://github.com/yamsergey/homebrew-packages/releases/download/dta-cli-dev-0.10.0-SNAPSHOT.125/dta-cli-0.10.0-SNAPSHOT.125.tar.gz"
+  sha256 "73d15dfdd56d565af8ea4c744a224cab767abdd17c0492ad98a24710e2467824"
   license "Apache-2.0"
-  version "0.10.0-SNAPSHOT.124"
+  version "0.10.0-SNAPSHOT.125"
 
   depends_on "openjdk@21"
 
@@ -14,6 +14,6 @@ class DtaCliDev < Formula
   end
 
   test do
-    assert_match "dta 0.10.0-SNAPSHOT.124", shell_output("#{bin}/dta --version")
+    assert_match "dta 0.10.0-SNAPSHOT.125", shell_output("#{bin}/dta --version")
   end
 end
